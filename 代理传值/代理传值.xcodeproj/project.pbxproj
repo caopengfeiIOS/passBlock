@@ -15,6 +15,8 @@
 		BAFB6F111E5FFEEB00654F57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFB6F0F1E5FFEEB00654F57 /* LaunchScreen.storyboard */; };
 		BAFB6F1C1E5FFEEB00654F57 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFB6F1B1E5FFEEB00654F57 /* ____Tests.m */; };
 		BAFB6F271E5FFEEB00654F57 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFB6F261E5FFEEB00654F57 /* ____UITests.m */; };
+		BAFB6F361E60028000654F57 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFB6F351E60028000654F57 /* FirstViewController.m */; };
+		BAFB6F391E60028D00654F57 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFB6F381E60028D00654F57 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,12 @@
 		BAFB6F221E5FFEEB00654F57 /* 代理传值UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "代理传值UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFB6F261E5FFEEB00654F57 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		BAFB6F281E5FFEEB00654F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAFB6F341E60028000654F57 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		BAFB6F351E60028000654F57 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		BAFB6F371E60028D00654F57 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		BAFB6F381E60028D00654F57 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		BAFB6F3A1E60063800654F57 /* Countpass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Countpass.h; sourceTree = "<group>"; };
+		BAFB6F3B1E60089900654F57 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,11 @@
 				BAFB6F051E5FFEEB00654F57 /* AppDelegate.m */,
 				BAFB6F071E5FFEEB00654F57 /* ViewController.h */,
 				BAFB6F081E5FFEEB00654F57 /* ViewController.m */,
+				BAFB6F341E60028000654F57 /* FirstViewController.h */,
+				BAFB6F351E60028000654F57 /* FirstViewController.m */,
+				BAFB6F371E60028D00654F57 /* SecondViewController.h */,
+				BAFB6F381E60028D00654F57 /* SecondViewController.m */,
+				BAFB6F3A1E60063800654F57 /* Countpass.h */,
 				BAFB6F0A1E5FFEEB00654F57 /* Main.storyboard */,
 				BAFB6F0D1E5FFEEB00654F57 /* Assets.xcassets */,
 				BAFB6F0F1E5FFEEB00654F57 /* LaunchScreen.storyboard */,
@@ -118,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				BAFB6F021E5FFEEB00654F57 /* main.m */,
+				BAFB6F3B1E60089900654F57 /* Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -273,9 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAFB6F391E60028D00654F57 /* SecondViewController.m in Sources */,
 				BAFB6F091E5FFEEB00654F57 /* ViewController.m in Sources */,
 				BAFB6F061E5FFEEB00654F57 /* AppDelegate.m in Sources */,
 				BAFB6F031E5FFEEB00654F57 /* main.m in Sources */,
+				BAFB6F361E60028000654F57 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "/Users/hbgl/Desktop/Delegate，Block，通知/passBlock/代理传值/代理传值/Header.h";
 				INFOPLIST_FILE = "代理传值/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hbgl.----";
@@ -435,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "/Users/hbgl/Desktop/Delegate，Block，通知/passBlock/代理传值/代理传值/Header.h";
 				INFOPLIST_FILE = "代理传值/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hbgl.----";
@@ -507,6 +525,7 @@
 				BAFB6F2D1E5FFEEB00654F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAFB6F2E1E5FFEEB00654F57 /* Build configuration list for PBXNativeTarget "代理传值Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +534,7 @@
 				BAFB6F301E5FFEEB00654F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAFB6F311E5FFEEB00654F57 /* Build configuration list for PBXNativeTarget "代理传值UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +543,7 @@
 				BAFB6F331E5FFEEB00654F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
