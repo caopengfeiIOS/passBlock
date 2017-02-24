@@ -41,7 +41,7 @@
 -(void)setPassWord:(passWord)password
 {
     if (password) {
-        password(@"方法");
+        password(self.blockTextfile.text);
     }
 }
 - (void)didReceiveMemoryWarning {

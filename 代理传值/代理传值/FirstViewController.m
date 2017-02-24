@@ -31,11 +31,15 @@
     //将第二个控制器实例化，"SecondViewController"为我们设置的控制器的ID
     SecondViewController *secondViewController = [mainStoryBoard instantiateViewControllerWithIdentifier:@"SecondViewController"];
     secondViewController.delegate = self;
-    secondViewController.block=^(NSString * str)
-    {
+    //block 属性用法啊
+//    secondViewController.block=^(NSString * str)
+//    {
+//        self.blockText.text = str;
+//    };
+    //block 方法用法
+    [secondViewController setBlock:^(NSString *str) {
         self.blockText.text = str;
-    };
-
+    }];
     
     //跳转事件
     self.blockText.text = nil;
